@@ -1,0 +1,28 @@
+﻿<Window x:Class="Socket_4I.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Socket_4I"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="400" Width="555">
+    <Grid>
+
+        <ListBox x:Name="lstMessaggi" HorizontalAlignment="Left" Height="251" Margin="10,43,0,0" VerticalAlignment="Top" Width="172"/>
+        <Button x:Name="btnInvia" Content="Invia" HorizontalAlignment="Left" Margin="210,73,0,0" VerticalAlignment="Top" Width="74" Click="btnInvia_Click"/>
+        <TextBox x:Name="txtTo" HorizontalAlignment="Left" Height="23" Margin="187,43,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Text="0.0.0.0"/>
+        <TextBox x:Name="txtMessaggio" HorizontalAlignment="Left" Height="63" Margin="187,167,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label Content="CHAT:" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="172"/>
+
+        <RadioButton x:Name="rbBroadcast" Content="Broadcast" HorizontalAlignment="Left" Margin="400,27,0,0" VerticalAlignment="Top" Height="26" IsChecked="True"/>
+        <RadioButton x:Name="rbClient" Content="A client" HorizontalAlignment="Left" Margin="400,58,0,0" VerticalAlignment="Top" Height="26" IsChecked="False"/>
+        <Label Content="IP di destinazione:" HorizontalAlignment="Left" Margin="187,4,0,0" VerticalAlignment="Top"/>
+        <Label Content="Messaggio:" HorizontalAlignment="Left" Margin="187,130,0,0" VerticalAlignment="Top" Width="120"/>
+
+        <TextBox x:Name="txtSocketIn" HorizontalAlignment="Left" Margin="369,187,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Height="23"/>
+        <TextBox x:Name="txtSocketOut" HorizontalAlignment="Left" Margin="369,250,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" Height="23"/>
+        <Label Content="Socket in:" HorizontalAlignment="Left" Margin="369,156,0,0" VerticalAlignment="Top" Width="120" />
+        <Label Content="Socket out:" HorizontalAlignment="Left" Margin="370,219,0,0" VerticalAlignment="Top" Width="120"/>
+
+    </Grid>
+</Window>
